@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactenos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo-Uleam">  
+            <h1>
+                Sistema universitario de informacion
+                <br>
+                en linea para revistas cientificas
+                <br>
+                de la universidad ULEAM
+            </h1>
+            <h1 class="text">
+                Soporte 123-245-545(ec)
+            </h1>
+        </div>
+    </header>
+
+    <div class="nav-usuario">
+        <ul>
+            <li><a href="iniciar-sesion.html">Iniciar sesion</a></li>
+            <li><a href="registro.html">Registrate</a></li>
+        </ul>
+    </div>
+
+    <div class="nav-menu">
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="acerca-de.html">Acerca de</a></li>
+            <li><a href="contacto.html">Envianos tus opiniones</a></li>
+        </ul>
+    </div>
+
+    <div class="estadisticas">
+        <span>
+            <b>1,004 Revistas en linea |</b>
+            <b>31 Paises |</b>
+            <b>Soporte 24 horas |</b>
+        </span>
+    </div>
+           
+        <form id="formulario" class="formulario-contacto">
+            <h2> Envie sus sugerencias o contactenos</h2>
+            <div>
+            <label for="nombre">Nombres:</label>
+            <input type="text" id="nombre" name="useNombre" required placeholder="Nombres y apellidos">
+            <br></div>
+
+            <div>
+            <label for="correo"> Correo electronico: </label>
+            <input type="email" id="correo" name="userEmail" required placeholder="usuario@hotmail.com">
+            <br></div>
+
+            <div>
+            <label for="numero"> Numero telefonico: </label>
+            <input type="text" id="numero" name="userNumero" required>
+            <br></div>
+
+            <div>
+            <label for="pro"> Carrera: </label>
+            <input type="text" id="pro" name="userPro" required>
+            <br></div>
+
+            <div>
+            <label for="facultad"> Facultad: </label>
+            <input type="text" id="facultad" name="userFacultad" required>
+            <br></div>
+
+            <div>
+            <label for="comentario"> Anotaciones: </label><br>
+            <textarea cols="40" rows="10" id="comentario" name="userMensaje" placeholder="Ingrese mensaje" name="comentario"></textarea>
+            <br></div>
+
+            <div>
+            <span id="mensajeError" ></span>
+            <br></div>
+
+            <div>
+            <input type="submit" value="Enviar" onclick="return validarFormulario()">
+            <a href="index.html">Volver</a>
+        </form>
+
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="footer-row">
+                <div class="footer-links">
+                    <h4>Informacion</h4>
+                    <ul>
+                        <li><a href="#">Terminos y condiciones</a></li>
+                        <li><a href="#">Nuestros servicios</a></li>
+                        <li><a href="#">Politica de privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Ayuda</h4>
+                    <ul>
+                        <li><a href="#">Preguntas</a></li>
+                        <li><a href="#">Boletin</a></li>
+                        <li><a href="#">Mi cuenta</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Informacion de contacto</h4>
+                    <p>
+                        Teléfono: 123-245-545 <br>
+                        Fax: 23435677 <br>
+                        Email: revistas@support.com
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <h4>Boletín informativo</h4>
+                    <p>
+                        Suscríbete a nuestros boletines ahora y mantente al
+                        día con informes academicos y actualizaciones de nuestra
+                        pagina web.
+                    </p>
+                    <div class="footer-correo">
+                    <input type="email" id="correo-footer" name="correo-footer" placeholder="usuario@hotmail.com">
+                    <input type="submit" value="Enviar" onclick="return validarSuscripcion()">
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
